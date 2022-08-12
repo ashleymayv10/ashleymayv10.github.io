@@ -40,3 +40,12 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@main
+
+- name: Checkout
+  uses: actions/checkout@v2.4.2
+  
+  - name: Upload GitHub Pages artifact
+  uses: actions/upload-pages-artifact@v1.0.3
+
+- name: Deploy GitHub Pages site
+  uses: actions/deploy-pages@v1.0.8
