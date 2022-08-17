@@ -5,36 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashleymayv10</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css"
 
-    <style>
-        /* DIV STYLES */
-       /* header
-        aboutMe
-        resources
-        contact
-        footer
-
-        /*Image Style */
-        .universitylogo{
-            width: 250px;
-            align-items: center;
-            
-        }
-
-        .socials{
-            height:50px;
-        }
-
-        .employers{
-            height:250px;
-        }
-    </style>
-
-    <script>
-        /** STYLES **/
-
-    
-    </script>
 
 </head>
 <body>

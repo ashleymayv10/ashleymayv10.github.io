@@ -1,0 +1,100 @@
+/* 
+Colors
+1B2430 - Dark Navy/Purple
+51557E - Muted Dark Purple
+816797 - Pretty Purple
+D6D5A8 - Sand? 
+*/
+
+body{
+    background-color: #1B2430;
+    color: white;
+}
+
+a:link, a:visited, a:active{
+    color:#D6D5A8;
+    text-decoration: none;
+}
+
+.nav-container{
+    display: inline-flex;
+}
+
+header{
+    margin-left:0;
+    display: block;
+    padding-left: 80%;
+}
+.nav-container, header{
+    background-color: #1B2430;
+    color: #D6D5A8;
+}
+
+.nav-item{
+    list-style: none;
+    padding: 5%;
+    margin:auto;
+
+}
+
+#banner{
+    height: 300px;
+    font-size: larger;
+}
+
+/* Header's Welcome Message */
+span{
+    animation: blinker 1s linear infinite;
+    color: #D6D5A8;
+}
+
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
+
+.welcomemessage{
+    size: 1500px;
+}
+
+/* About Me */
+
+#about{
+    background-color: #51557E;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 1%;
+}
+
+#professional, #education{
+    margin:auto;
+    display: inline-block;
+    padding: 3%;
+    background-color: #1B2430;
+    border-radius: 2%;
+}
+
+.universitylogo, .employers{
+    width: 250px;
+    align-items: center;
+
+}
+
+.universitylogo:hover, .employers:hover{
+    background-color: #1B2430;
+    opacity:50%;
+}
+
+.socials{
+    height:50px;
+}
+
+
+/* Contact */
+#contact{
+    background-color: #1B2430;
+}
+
+

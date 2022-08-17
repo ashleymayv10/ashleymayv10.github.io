@@ -1,0 +1,21 @@
+/* DIV STYLES */
+       /* header
+        aboutMe
+        resources
+        contact
+        footer
+
+        /*Image Style */
+        .universitylogo{
+            width: 250px;
+            align-items: center;
+            
+        }
+
+        .socials{
+            height:50px;
+        }
+
+        .employers{
+            height:250px;
+        }
