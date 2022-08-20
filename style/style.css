@@ -12,7 +12,7 @@ body{
 }
 
 a:link, a:visited, a:active{
-    color:#D6D5A8;
+    color:white;
     text-decoration: none;
 }
 
@@ -34,18 +34,23 @@ header{
     list-style: none;
     padding: 5%;
     margin:auto;
+}
 
+#welcomemessage{
+    font-size: 5em;
+    color: #816797;
+    margin: auto;
+    padding-left: 2%;
 }
 
 #banner{
-    height: 300px;
-    font-size: larger;
+    height: 200px;
 }
 
 /* Header's Welcome Message */
 span{
     animation: blinker 1s linear infinite;
-    color: #D6D5A8;
+    color: #816797;
 }
 
 @keyframes blinker{
@@ -54,32 +59,47 @@ span{
     }
 }
 
-.welcomemessage{
-    size: 1500px;
-}
-
 /* About Me */
 
 #about{
     background-color: #51557E;
-    width: 90%;
-    margin: auto;
-    display: flex;
     padding: 1%;
+    width: 100%;
+    display: flex;
+    vertical-align: top;
 }
 
-#professional, #education{
-    margin:auto;
-    display: inline-block;
-    padding: 3%;
+#experience, #education{
+    width:45%;
+}
+
+.content{
+    height: 175px;
+}
+
+#collapse, .content{
+    padding: 2%;
+    border-radius: 1%;
+    overflow-wrap: break-word;
+}
+
+h2 {
+    margin-left: 1%;
+	padding: 5px 0 0 10px;
+	cursor: pointer;
     background-color: #1B2430;
-    border-radius: 2%;
+}
+
+h2.close {
+	cursor: pointer;
 }
 
 .universitylogo, .employers{
-    width: 250px;
-    align-items: center;
-
+    width: 150px;
+    float: left;
+    vertical-align: top;
+    background-color: white;
+    margin: 7px 7px 7px 7px;
 }
 
 .universitylogo:hover, .employers:hover{
@@ -91,10 +111,25 @@ span{
     height:50px;
 }
 
-
+/* Projects */
+#projects{
+    background-color: #1B2430;
+    width:100%;
+    margin: auto;
+    padding: 1%;
+}
 /* Contact */
 #contact{
-    background-color: #1B2430;
+    background-color: #51557E;
+    width: 100%;
 }
 
+footer{
+    background-color: #1B2430;
+    height:30px;
+    margin:0 42.5% auto;
+}
 
+.footericon{
+    height:50px;
+}

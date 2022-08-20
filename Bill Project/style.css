@@ -1,0 +1,84 @@
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Photos/MoneyBucket.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;    
+    text-align: center;
+    height: 300px;
+    padding: 5px;
+}
+
+h1{
+    opacity: 90%;
+    font-size: 124px;
+}
+
+#textinput{
+    height: fit-content;
+    width: fit-content;
+    text-align: left;
+    bottom:1px;
+    padding-bottom: 1px;
+    margin: 10px;
+}
+
+input[type=text], input[type=date], select, button{
+    width: 17%;
+    padding: 2%;
+    border: none;
+    background-color:rgba(83, 83, 83, 0.74);
+    text-align: center;
+    color: white;
+}
+
+.button:hover, select:hover, input[type=text]:hover, input[type=date]:hover{
+    background-color: rgba(83, 83, 83, 1);
+}
+
+/* This is the format of the new div that will be created with the addBill function */
+.billUnpaidSquare{
+    width:200px;
+    height: 200px;
+    border-radius: 5%;
+    background-color: darkslategray;
+    float: left;
+    margin: 1%;
+    
+}
+
+/* #billSquarePaid{
+    width:200px;
+    height: 200px;
+    overflow: scroll;
+    border-radius: 25%;
+    background-color: aquamarine;
+} */
+
+.allbills{
+    height:auto;
+    width:auto;
+    padding: 1%;
+    display: inline-block;
+}
+
+.deleteSquare{
+    font-size: small;
+    width: auto;
+    border:none;
+    color:white;
+}
+
+.deleteSquare:hover{
+    background-color:rgba(83, 83, 83, 0.2);
+}
+
+::-webkit-scrollbar{
+    visibility: hidden;
+}
