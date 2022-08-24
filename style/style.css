@@ -8,16 +8,16 @@ D6D5A8 - Sand?
 
 body{
     background-color: #1B2430;
-    color: white;
+    color: #D6D5A8;
 }
 
 a:link, a:visited, a:active{
-    color:white;
+    color:#D6D5A8;
     text-decoration: none;
 }
 
 .nav-container{
-    display: inline-flex;
+    display: flex;
 }
 
 header{
@@ -38,9 +38,19 @@ header{
 
 #welcomemessage{
     font-size: 5em;
-    color: #816797;
+    color: #D6D5A8;;
     margin: auto;
     padding-left: 2%;
+}
+
+#resume{
+    outline: thick solid #D6D5A8;;
+    color:#D6D5A8;;
+    padding: 1%;
+    border-radius: 1%;
+    margin-left: 2%;
+    margin-right: 87%;
+    text-align: center;
 }
 
 #banner{
@@ -50,7 +60,7 @@ header{
 /* Header's Welcome Message */
 span{
     animation: blinker 1s linear infinite;
-    color: #816797;
+    color: #D6D5A8;;
 }
 
 @keyframes blinker{
@@ -61,13 +71,32 @@ span{
 
 /* About Me */
 
+.aboutme{
+    background-color: #51557E;
+    padding: 1%;
+    width: 100%;
+    flex-direction: column;
+    flex: auto;
+}
+
+
 #about{
     background-color: #51557E;
     padding: 1%;
     width: 100%;
     display: flex;
     vertical-align: top;
+    margin: auto;
+    align-self: auto;
 }
+
+#headshot{
+    width:40%;
+    overflow: hidden;
+    border-radius: 1%;
+    padding-left: 10%;
+}
+
 
 #experience, #education{
     width:45%;
@@ -83,6 +112,10 @@ span{
     overflow-wrap: break-word;
 }
 
+h1{
+    text-align: center;
+}
+
 h2 {
     margin-left: 1%;
 	padding: 5px 0 0 10px;
@@ -92,6 +125,12 @@ h2 {
 
 h2.close {
 	cursor: pointer;
+    content: "x";
+}
+
+.skills{
+    height: 200px;
+
 }
 
 .universitylogo, .employers{
@@ -109,19 +148,21 @@ h2.close {
 
 .socials{
     height:50px;
+    filter: grayscale(100%) contrast(0%);
 }
 
 /* Projects */
-#projects{
+#projects, #skills{
     background-color: #1B2430;
     width:100%;
-    margin: auto;
+    text-align: center;
     padding: 1%;
 }
 /* Contact */
 #contact{
     background-color: #51557E;
     width: 100%;
+    text-align: center;
 }
 
 footer{
