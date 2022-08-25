@@ -61,7 +61,7 @@ header{
 /* Header's Welcome Message */
 span{
     animation: blinker 1s linear infinite;
-    color: #D6D5A8;;
+    color: #D6D5A8;
 }
 
 @keyframes blinker{
@@ -110,11 +110,31 @@ h2 {
 	padding: 5px 0 0 10px;
 	cursor: pointer;
     background-color: #1B2430;
+    background-image: url(./Images/open.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
+}
+
+h2.open {
+	cursor: pointer;
+    background-image: url(./Images/close.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
+    background-color: #1B2430;
 }
 
 h2.close {
 	cursor: pointer;
-    content: "x";
+    background-image: url(./Images/close.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
+    background-color: #1B2430;
 }
 
 .skills{
@@ -147,6 +167,29 @@ h2.close {
     background-color: #1B2430;
     width:100%;
     text-align: center;
+    padding: 1%;
+}
+
+.projectthumb, .projectthumb:visited, .projectthumb:link, .projectthumb:hover{
+    background-color: white;
+    height:15%;
+    background-position-x: right;
+    color: #1B2430 !important;
+    overflow: scroll;
+    border-radius: 5%;
+    padding: 1%;
+    overflow: hidden;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+.projectimg{
+    width: 20%;
+    position: right;
+}
+
+.linkdiv{
+    background-color: #1B2430;
     padding: 1%;
 }
 /* Contact */
