@@ -7,8 +7,12 @@ D6D5A8 - Sand?
 */
 
 body{
-    background-color: #1B2430;
-    color: #D6D5A8;
+    background-color: #1B2430 !important;
+    color: #D6D5A8 !important;
+}
+
+.row, .row2, #banner, header{
+    background-color: #1B2430 !important;
 }
 
 a:link, a:visited, a:active{
@@ -16,16 +20,11 @@ a:link, a:visited, a:active{
     text-decoration: none;
 }
 
-.nav-container{
-    display: flex;
-}
-
 header{
     margin-left:0;
-    display: block;
     padding-left: 80%;
 }
-.nav-container, header{
+header{
     background-color: #1B2430;
     color: #D6D5A8;
 }
@@ -50,11 +49,13 @@ header{
     border-radius: 1%;
     margin-left: 2%;
     margin-right: 87%;
+    margin-bottom: 2%;
     text-align: center;
+    min-width: 200px;
 }
 
 #banner{
-    height: 200px;
+    min-height: 200px;
 }
 
 /* Header's Welcome Message */
@@ -72,41 +73,29 @@ span{
 /* About Me */
 
 .aboutme{
-    background-color: #51557E;
-    padding: 1%;
-    width: 100%;
-    flex-direction: column;
-    flex: auto;
+    background-color: #51557E !important;
+    padding: 3%;
 }
 
-
 #about{
-    background-color: #51557E;
-    padding: 1%;
-    width: 100%;
-    display: flex;
-    vertical-align: top;
+    background-color: #51557E !important;
     margin: auto;
-    align-self: auto;
 }
 
 #headshot{
-    width:40%;
+    max-width:70%;
     overflow: hidden;
     border-radius: 1%;
     padding-left: 10%;
-}
-
-
-#experience, #education{
-    width:45%;
+    min-width: 400px;
+    align-items: center;
 }
 
 .content{
-    height: 175px;
+    min-height: 175px;
 }
 
-#collapse, .content{
+#collapsee, .content{
     padding: 2%;
     border-radius: 1%;
     overflow-wrap: break-word;
@@ -148,7 +137,9 @@ h2.close {
 
 .socials{
     height:50px;
-    filter: grayscale(100%) contrast(0%);
+    margin-top:2%;
+    margin-bottom: 2%;
+    filter:brightness(0)
 }
 
 /* Projects */
@@ -163,6 +154,22 @@ h2.close {
     background-color: #51557E;
     width: 100%;
     text-align: center;
+}
+
+.form{
+    width:40%;
+    background-color: #1B2430;
+    border: none;
+    padding:1%;
+    margin: .5ch;
+}
+
+#submit{
+    background-color: #1B2430;
+    color: #D6D5A8;
+    border: none;
+    padding: 1%;
+    margin-bottom: 2%;
 }
 
 footer{
