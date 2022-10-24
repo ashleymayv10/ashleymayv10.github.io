@@ -9,6 +9,7 @@ D6D5A8 - Sand?
 body{
     background-color: #1B2430 !important;
     color: #D6D5A8 !important;
+    overflow-x: hidden;
 }
 
 .row, .row2, #banner, header{
@@ -23,10 +24,9 @@ a:link, a:visited, a:active{
 header{
     margin-left:0;
     padding-left: 80%;
-}
-header{
     background-color: #1B2430;
     color: #D6D5A8;
+    height: 30vw;
 }
 
 .nav-item{
@@ -42,9 +42,15 @@ header{
     padding-left: 2%;
 }
 
+#tagline{
+    color: #D6D5A8;
+    font-size: 2em;
+    padding-left: 2%;
+}
+
 #resume{
     outline: thick solid #D6D5A8;;
-    color:#D6D5A8;;
+    color:#D6D5A8;
     padding: 1%;
     border-radius: 1%;
     margin-left: 2%;
@@ -52,10 +58,6 @@ header{
     margin-bottom: 2%;
     text-align: center;
     min-width: 200px;
-}
-
-#banner{
-    min-height: 200px;
 }
 
 /* Header's Welcome Message */
@@ -139,15 +141,27 @@ h2.close {
 
 .skills{
     height: 200px;
-
 }
 
-.universitylogo, .employers{
+.universitylogo{
+    width: 150px;
+    background-color: white;
+    display:block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.educationtitle{
+    text-align: center;
+    text-decoration: solid;
+}
+.employers{
     width: 150px;
     float: left;
     vertical-align: top;
     background-color: white;
-    margin: 7px 7px 7px 7px;
+    margin: 15px 15px 15px 15px;
 }
 
 .universitylogo:hover, .employers:hover{
@@ -162,15 +176,26 @@ h2.close {
     filter:brightness(0)
 }
 
+
+li{
+    list-style-position: inside;
+}
+
 /* Projects */
-#projects, #skills{
+#skills{
     background-color: #1B2430;
     width:100%;
     text-align: center;
     padding: 1%;
 }
 
-.projectthumb, .projectthumb:visited, .projectthumb:link, .projectthumb:hover{
+/* .projects{
+    width: 20vw;
+    height: 15vw;
+    background-color: #51557E;
+} */
+
+/* .projectthumb, .projectthumb:visited, .projectthumb:link, .projectthumb:hover{
     background-color: white;
     height:15%;
     background-position-x: right;
@@ -181,7 +206,7 @@ h2.close {
     overflow: hidden;
     margin-top: 1%;
     margin-right: 1%;
-}
+} */
 
 .projectimg{
     width: 20%;
@@ -192,6 +217,8 @@ h2.close {
     background-color: #1B2430;
     padding: 1%;
 }
+
+
 /* Contact */
 #contact{
     background-color: #51557E;
