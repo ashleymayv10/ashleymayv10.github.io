@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    background-image:url(./Images/background.jpg);
+}
+
+#container{
+    background-color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+#display{
+    text-align: center;
+    padding: 4%;
+    display: block;
+    justify-content: center;
+}
+
+#draw{
+    border-style: none;
+    background-color: grey ;
+    padding: 2%;
+}
+
+#draw:hover{
+    opacity: 80%;
+}
