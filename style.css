@@ -205,9 +205,10 @@ li{
     margin: 1%;
 }
 
-.projectimg{
-    width: 20%;
-    position: right;
+#projectimg{
+    height:10vw;
+    display: block;
+    margin: auto;
 }
 
 .linkdiv{
